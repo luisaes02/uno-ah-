@@ -556,8 +556,8 @@ def onmessage(update,bot:ObigramClient):
 
         if '/start' in msgText:
             
-            msg = 'Bienvenido a TgUploader en su versió 1.15.0!\n\n'
-            msg+= 'Para saber como funciona esta versión solo use: /help\n'
+            msg = 'Hola bienvenido al bot privado de @EL_Wizard\n\n'
+            msg+= 'Para saber como funciona el bot use el comando: /help\n'
             bot.editMessageText(message,msg)
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
              proxy = ProxyCloud.parse(user_info['proxy'])
