@@ -346,7 +346,7 @@ def onmessage(update,bot:ObigramClient):
             return
 
         if '/about' in msgText:
-            bot.sendMessage(update.message.chat.id, f'Soy un bot privado que sube a las moodle de universidades al igual que a las NextCloud.\n\nTodas las cuentas que se configuren el bot, serán temporalmente guardadas en la database de este bot, pero no quiere decir que se roben cuentas, así que con seguridad puedo decir que este bot es seguro para sus cuentas.\n\nDe igual forma, todo está bajo su responsabilidad.\n\nVersión 1.15.0 Basada 7.1')
+            bot.sendMessage(update.message.chat.id, f'Bienvenido soy un bot de subida gratis creado por @EL_Wizard.\n\nEste es el bot mas fachero que vaz aver en todo Telegram 😋🤙🏻🍧.\n\nVersión 1.15.0 Basada 7.1')
             return
 
         if '/crypt' in msgText:
