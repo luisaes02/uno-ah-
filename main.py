@@ -346,7 +346,7 @@ def onmessage(update,bot:ObigramClient):
             return
 
         if '/about' in msgText:
-            bot.sendMessage(update.message.chat.id, f'Bienvenido soy un bot de subida gratis creado por @EL_Wizard.\n\nEste es el bot mas fachero que vaz aver en todo Telegram 😋🤙🏻🍧.\n\nVersión 1.15.0 Basada 7.1')
+            bot.sendMessage(update.message.chat.id, f'Bienvenido soy un bot privado de subida gratis creado por @EL_Wizard.\n\nEste es el bot mas fachero que vaz aver en todo Telegram 😋🤙🏻🍧.\n\nVersión 1.15.0 Basada 7.1')
             return
 
         if '/crypt' in msgText:
