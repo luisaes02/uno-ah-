@@ -91,7 +91,7 @@ def createFinishUploading(filename,filesize,split_size,current,count,findex):
 def createFileMsg(filename,files):
     import urllib
     if len(files)>0:
-        msg= '<b>🖇Enlaces🖇</b>\n'
+        msg= '<b>🖇 Enlaces</b>\n'
         for f in files:
             url = urllib.parse.unquote(f['directurl'],encoding='utf-8', errors='replace')
             #msg+= '<a href="'+f['url']+'">🔗' + f['name'] + '🔗</a>'
@@ -123,7 +123,7 @@ def createStat(username,userdata,isadmin):
     msg+= '🔒 Password: ' + str(userdata['moodle_password'])+'\n'
     msg+= '🔗 Host: ' + str(userdata['moodle_host'])+'\n'
     if userdata['cloudtype'] == 'moodle':
-        msg+= '》RepoID: ' + str(userdata['moodle_repo_id'])+'\n'
+        msg+= '⚒️ RepoID: ' + str(userdata['moodle_repo_id'])+'\n'
     msg+= '🏷️ CloudType: ' + str(userdata['cloudtype'])+'\n'
     msg+= '🗄️ UpType: ' + str(userdata['uploadtype'])+'\n'
     if userdata['cloudtype'] == 'cloud':
@@ -132,7 +132,7 @@ def createStat(username,userdata,isadmin):
     msgAdmin = 'No'
     if isadmin:
         msgAdmin = 'Si'
-    msg+= '》Admin : ' + msgAdmin + '\n'
+    msg+= '🔑 Admin : ' + msgAdmin + '\n'
     proxy = 'NO'
     if userdata['proxy'] !='':
        proxy = 'SI'
